@@ -1,6 +1,18 @@
 "use strict";
 var _a, _b;
 let age = 10;
+let firstName = "John";
+let isActive = false;
+let x = 'a';
+x = 1;
+let y = 1;
+y = 'a';
+function getArray(items) {
+    return new Array().concat(items);
+}
+let numArray = getArray([1, 2, 3]);
+let strArray = getArray(["a", "b", "c"]);
+let boolArray = getArray([true, false, true]);
 if (age < 50) {
     age += 10;
     console.log("You are still young");
@@ -18,6 +30,11 @@ let user = [1, "John"];
 user[0].toString();
 user[1].toUpperCase();
 user.push(1);
+let users;
+users = [
+    [1, "John"],
+    [2, "Jane"]
+];
 var Size_default;
 (function (Size_default) {
     Size_default[Size_default["Small"] = 0] = "Small";
@@ -38,7 +55,8 @@ function calculateTax(income, taxYear = 2023) {
     return income * 1.3;
 }
 console.log(calculateTax(10000, 2021));
-let employee = {
+let employee;
+let emp = {
     id: 1,
     name: "John",
     retire: (date) => {
@@ -52,6 +70,46 @@ let employee2 = {
         console.log(date);
     }
 };
+let message = "Hello";
+let user1 = {
+    id: 1,
+    name: "John",
+};
+class Person {
+    constructor(id, age, name) {
+        this.id = id;
+        this.age = age;
+        this.name = name;
+    }
+    register() {
+        console.log("id: " + this.id + " and name " + this.name + " is registered");
+    }
+}
+const brad = new Person(1, 25, "Brad");
+console.log(brad.register());
+class NewPerson extends Person {
+    constructor(id, age, name, position) {
+        super(id, age, name);
+        this.position = position;
+    }
+    register() {
+        console.log("id: this.id // id is private and will give error here" + " and name " + this.name + " is registered as " + this.position);
+    }
+}
+class PersonWithEmail {
+    constructor(id, age, name, email) {
+        this.id = id;
+        this.age = age;
+        this.name = name;
+        this.email = email;
+    }
+    register() {
+        console.log("id: " + this.id + " and name " + this.name + " is registered");
+    }
+}
+let cid = 1;
+let customerId = cid;
+let customerId2 = cid;
 function kgToLbs(weight) {
     if (typeof weight === 'number') {
         return weight * 2.2;
@@ -76,6 +134,7 @@ let textbox = {
     }
 };
 render(textbox);
+let textbox2;
 let quantity = 100;
 quantity = 50;
 function greet(name) {
