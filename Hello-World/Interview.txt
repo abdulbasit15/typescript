@@ -1,0 +1,16 @@
+https://arc.dev/talent-blog/typescript-interview-questions/
+3. What are interfaces in TypeScript?
+4. How do you create a new type using a subset of an interface?
+7. What are the differences between var, let, and const?
+8. When do you use a return type of never and how does it differ from void?
+9. What access modifiers are supported by TypeScript?
+10. What are generics and how to use them in TypeScript?
+
+1. When should you use the unknown type?
+2. What is noImplicitAny and what is its purpose?
+5. What is the difference between extends and implements in TypeScript?
+
+2. What are abstract classes?
+3. What are type assertions in TypeScript?
+4. What is the difference between type inference and contextual typing?
+5. How does function overloads work in TypeScript?
